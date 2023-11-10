@@ -346,6 +346,7 @@ class Telnet {
 	 * @return boolean
 	 */
 	protected function negotiateTelnetOptions() {
+		/**  @var string $c */
 		$c = $this->getc();
 
 		if ($c != $this->IAC) {
